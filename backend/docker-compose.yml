@@ -1,26 +1,24 @@
 version: '3.8'
 
 services:
-  order-management-system:
-    image: buadvdev2024/order-management-system:latest
-    container_name: order-management-system
+  menumanager:
+    image: ghcr.io/buadvdev2024/menumanager/menumanager-image:latest
+    build:
+      context: ./MenuManager
+      dockerfile: Dockerfile
     ports:
-      - "3001:3000" # Map container port 3000 to host port 3001
-    depends_on:
-      - database
-
-  customer-feedback-system:
-    image: buadvdev2024/customerfeedbacksystem:latest
-    container_name: customer-feedback-system
-    ports:
-      - "3002:3000" # Map container port 3000 to host port 3002
-
-  database:
-    image: postgres:14
-    container_name: postgres-db
+      - "8080:8080"
     environment:
-      POSTGRES_USER: user
-      POSTGRES_PASSWORD: password
-      POSTGRES_DB: mydatabase
-    ports:
-      - "5432:5432"
+      - FLASK_APP=app.py
+      - HOST=0.0.0.0
+      - PORT=8080
+    stop_signal: SIGINT
+    volumes:
+      - ./MenuManager/src:/src
+    networks:
+      - pizza-network
+
+networks:
+  pizza-network:
+    name: pizza-network
+    driver: bridge
