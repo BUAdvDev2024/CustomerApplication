@@ -16,17 +16,9 @@ services:
     volumes:
       - ./MenuManager/src:/src
     networks:
-<<<<<<< Updated upstream
-      - pizza-network
-
-networks:
-  pizza-network:
-    name: pizza-network
-=======
       - shared-network
 
 networks:
   shared-network:
     name: shared-network
->>>>>>> Stashed changes
     driver: bridge
