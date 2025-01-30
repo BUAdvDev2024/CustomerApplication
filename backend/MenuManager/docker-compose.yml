@@ -16,17 +16,24 @@ services:
     volumes:
       - ./MenuManager/src:/src
     networks:
-<<<<<<< Updated upstream
-      - pizza-network
+      - shared-network
 
-networks:
-  pizza-network:
-    name: pizza-network
-=======
+  ordermanagementsystem:
+    image: ghcr.io/buadvdev2024/order-management-system:main
+    build:
+      context: ./Order-Management-System
+      dockerfile: Dockerfile
+    env_file:
+      - ./Order-Management-System/.env
+    volumes:
+      - ./Order-Management-System:/app
+    ports:
+      - "5002:5002"
+    command: ["gunicorn", "--bind", "0.0.0.0:5002", "app.main:app"]
+    networks:
       - shared-network
 
 networks:
   shared-network:
     name: shared-network
->>>>>>> Stashed changes
     driver: bridge

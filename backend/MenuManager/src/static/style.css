@@ -1,0 +1,119 @@
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#restaurants-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+.restaurant-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant, .menu, .category, .item {
+    margin-bottom: 15px;
+}
+
+.menu {
+    padding-left: 20px;
+}
+
+.category {
+    padding-left: 40px;
+}
+
+.item {
+    padding-left: 60px;
+}
+
+.dietary {
+    padding-left: 80px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    color: black;
+    margin-bottom: 15px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.restaurant label {
+    font-size: 20px;
+}
+
+.menu label {
+    font-size: 18px;
+}
+
+.category label {
+    font-size: 16px;
+}
+
+.item label {
+    font-size: 14px;
+}
+
+.dietary label {
+    font-size: 12px;  
+}
+
+input[type="text"], input[type="number"], input[type="checkbox"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: dodgerblue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: mediumblue;
+}
+
+#restaurant-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+#restaurant-list-container h2 {
+    text-align: center;
+}
+
+#restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#restaurant-data {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+#restaurant-data ul {
+    padding: 20px;
+}

@@ -1,0 +1,24 @@
+INSERT INTO item(name, description, price, category) 
+VALUES
+("Fish and chips", "Battered fished and skin on fries with garden pees", 25.50, "Main"),
+("Southern fried chicken", "Southern fried chicken with skin on fries and tommato", 27.50, "Main"),
+("Garlic bread", "Chabbta bread with garlic butter", 11.20, "Starter");
+
+
+INSERT INTO user(username, email, role) 
+VALUES
+("xxPhillip007", "xxPhillip007@pizza.com", "salesman"),
+("12345RichmonJamesEdwards", "RichmonJamesEdwards7@pizza.com", "salesman");
+
+
+INSERT INTO orders(user_id, order_date, order_status, order_type, table_number, price, branch_id) 
+VALUES
+(1, "19/12/2024", "PROCESSING", "Eat In", 12, 62.20, 0),
+(2, "17/12/2024", "PROCESSING", "Eat In", 14, 55, 0);
+
+
+INSERT INTO order_item(order_id, item_id, quantity, modifications) 
+VALUES
+(1, 1, 2, "None"),
+(1, 3, 1, "None"),
+(2, 2, 2, "None");

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - Manage Orders</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+</head>
+<body>
+    <h1>Manage Orders</h1>
+
+    <div>
+        <h2>Add Order</h2>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId">
+        <label for="items">Items (comma-separated, e.g., item1:2, item2:1):</label>
+        <input type="text" id="items">
+        <button id="addOrderBtn">Add Order</button>
+    </div>
+
+    <div>
+        <h2>Delete Order</h2>
+        <label for="deleteOrderId">Order ID:</label>
+        <input type="text" id="deleteOrderId">
+        <button id="deleteOrderBtn">Delete Order</button>
+    </div>
+
+    <div>
+        <h2>Delete All Orders</h2>
+        <button id="deleteAllOrdersBtn">Delete All Orders</button>
+    </div>
+
+    <div>
+        <h2>View Orders</h2>
+        <button id="viewOrdersBtn">View All Orders</button>
+    </div>
+
+    <table id="ordersTable">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>User ID</th>
+                <th>Order Date</th>
+                <th>Status</th>
+                <th>Items</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
