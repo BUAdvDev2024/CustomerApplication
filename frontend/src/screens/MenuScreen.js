@@ -19,7 +19,7 @@ const MenuScreen = ({ navigation }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://10.157.199.29:8080/api/get_data");
+        const response = await fetch("http://YOUR_DEVICE_IP_HERE/api/get_data");
         const data = await response.json();
         const flattenedItems = flattenMenuItems(data.restaurants);
         setMenuItems(flattenedItems);
