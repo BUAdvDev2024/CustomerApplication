@@ -1,0 +1,117 @@
+{
+    "restaurants": {
+        "type": "object",
+        "properties": {
+            "name": {"type": "string"},
+            "menus": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "string"},
+                        "categories": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {"type": "string"},
+                                    "items": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "name": {"type": "string"},
+                                                "price": {"type": "number"},
+                                                "dietary": {
+                                                    "type": "array",
+                                                    "items": {"type": "string"}
+                                                },
+                                                "rewardEligible": {"type": "boolean"}
+                                            },
+                                            "required": ["name", "price", "dietary", "rewardEligible"]
+                                        }
+                                    }
+                                },
+                                "required": ["name", "items"]
+                            }
+                        }
+                    },
+                    "required": ["name", "categories"]
+                }
+            }
+        },
+        "required": ["name", "menus"]
+    },
+    "menus": {
+        "type": "object",
+        "properties": {
+            "name": {"type": "string"},
+            "categories": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "string"},
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {"type": "string"},
+                                    "price": {"type": "number"},
+                                    "dietary": {
+                                        "type": "array",
+                                        "items": {"type": "string"}
+                                    },
+                                    "rewardEligible": {"type": "boolean"}
+                                },
+                                "required": ["name", "price", "dietary", "rewardEligible"]
+                            }
+                        }
+                    },
+                    "required": ["name", "items"]
+                }
+            }
+        },
+        "required": ["name", "categories"]
+    },
+    "categories": {
+        "type": "object",
+        "properties": {
+            "name": {"type": "string"},
+            "items": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "name": {"type": "string"},
+                        "price": {"type": "number"},
+                        "dietary": {
+                            "type": "array",
+                            "items": {"type": "string"}
+                        },
+                        "rewardEligible": {"type": "boolean"}
+                    },
+                    "required": ["name", "price", "dietary", "rewardEligible"]
+                }
+            }
+        },
+        "required": ["name", "items"]
+    },
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {"type": "string"},
+            "price": {"type": "number"},
+            "dietary": {
+                "type": "array",
+                "items": {"type": "string"}
+            },
+            "rewardEligible": {"type": "boolean"}
+        },
+        "required": ["name", "price", "dietary", "rewardEligible"]
+    },
+    "dietary": {
+        "type": "string"
+    }
+}

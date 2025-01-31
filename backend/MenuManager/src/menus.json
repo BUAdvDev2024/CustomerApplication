@@ -1,0 +1,150 @@
+{
+  "restaurants": [
+    {
+      "name": "Restaurant A",
+      "menus": [
+        {
+          "name": "Standard Menu",
+          "categories": [
+            {
+              "name": "Drinks",
+              "items": [
+                {
+                  "name": "Pepsi",
+                  "price": 2.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "d8c6916d-e5a6-4029-b0a8-385a81809056"
+                },
+                {
+                  "name": "Coke",
+                  "price": 3.49,
+                  "dietary": [],
+                  "rewardEligible": true,
+                  "id": "a10f9deb-e50a-43dd-ab40-fb79ba2714b0"
+                }
+              ]
+            },
+            {
+              "name": "Standard Pizzas",
+              "items": [
+                {
+                  "name": "Motzerella",
+                  "price": 5.99,
+                  "dietary": ["Vegetarian"],
+                  "rewardEligible": false,
+                  "id": "7c02caeb-4ef4-493c-a756-b853aff660b9"
+                },
+                {
+                  "name": "Pepperoni",
+                  "price": 6.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "faf58585-f346-49de-8fa5-30dd53f7fefe"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Deluxe Menu",
+          "categories": [
+            {
+              "name": "Appetizers",
+              "items": [
+                {
+                  "name": "Garlic Bread",
+                  "price": 4.99,
+                  "dietary": ["Vegan"],
+                  "rewardEligible": true,
+                  "id": "0d0fac96-1d6f-4bdf-8b4d-57ce42cc4037"
+                },
+                {
+                  "name": "Olives",
+                  "price": 3.99,
+                  "dietary": ["Vegetarian"],
+                  "rewardEligible": false,
+                  "id": "63c77796-4b56-46dc-bc62-9857715fcecd"
+                }
+              ]
+            },
+            {
+              "name": "Delux Pizzas",
+              "items": [
+                {
+                  "name": "BBQ Chicken",
+                  "price": 10.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "bd1f5238-0704-40fb-b151-fcb7e96df3ce"
+                },
+                {
+                  "name": "Meat Feast",
+                  "price": 8.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "1eb8f0f4-861a-4f8e-89c1-a1875ab10714"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Restaurant B",
+      "menus": [
+        {
+          "name": "Base Menu",
+          "categories": [
+            {
+              "name": "Starters",
+              "items": [
+                {
+                  "name": "Soup of the Day",
+                  "price": 5.99,
+                  "dietary": ["Vegetarian"],
+                  "rewardEligible": false,
+                  "id": "cfc66049-c07b-49f6-8aa2-cc22a5586f4e"
+                },
+                {
+                  "name": "Dough Balls",
+                  "price": 6.49,
+                  "dietary": ["Vegetarian"],
+                  "rewardEligible": true,
+                  "id": "fa73f570-441a-4ad9-a6dd-06913b4a2242"
+                }
+              ]
+            },
+            {
+              "name": "Pizzas",
+              "items": [
+                {
+                  "name": "Margherita",
+                  "price": 15.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "75b7de6d-b9c2-4969-b12f-4dd93278aba2"
+                },
+                {
+                  "name": "Pepperoni",
+                  "price": 14.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "506b7379-8cdc-4046-84b5-800b4a948d1a"
+                },
+                {
+                  "name": "Kids Peperoin Pizza",
+                  "price": 8.99,
+                  "dietary": [],
+                  "rewardEligible": false,
+                  "id": "b3f09bc3-aa74-4d1f-bda0-532b656d1fe2"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
